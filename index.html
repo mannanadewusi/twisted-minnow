@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&amp;family=Work+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#323029",
+                    "secondary-fixed": "#ffdad4",
+                    "outline": "#9b8e87",
+                    "on-error-container": "#ffdad6",
+                    "surface-dim": "#15130d",
+                    "primary-fixed": "#fbddca",
+                    "on-primary": "#3f2c20",
+                    "secondary": "#ffb4a8",
+                    "on-surface-variant": "#d2c4bc",
+                    "surface-container-high": "#2c2a22",
+                    "outline-variant": "#4f453f",
+                    "on-primary-fixed-variant": "#574335",
+                    "background": "#15130d",
+                    "on-secondary-fixed-variant": "#920703",
+                    "tertiary-container": "#cca72f",
+                    "on-secondary": "#690000",
+                    "on-surface": "#e7e2d6",
+                    "surface-container-highest": "#36352d",
+                    "surface-container": "#212018",
+                    "secondary-container": "#920703",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "error-container": "#93000a",
+                    "tertiary": "#e9c349",
+                    "surface-container-lowest": "#0f0e08",
+                    "on-secondary-container": "#ff9a8a",
+                    "on-tertiary-container": "#4e3d00",
+                    "on-tertiary-fixed": "#241a00",
+                    "inverse-primary": "#705a4c",
+                    "on-tertiary": "#3c2f00",
+                    "on-primary-container": "#ac9181",
+                    "surface-bright": "#3b3931",
+                    "primary-fixed-dim": "#dec1af",
+                    "primary": "#dec1af",
+                    "inverse-surface": "#e7e2d6",
+                    "on-primary-fixed": "#28180d",
+                    "on-error": "#690005",
+                    "primary-container": "#3d2b1f",
+                    "surface-variant": "#36352d",
+                    "tertiary-fixed": "#ffe088",
+                    "secondary-fixed-dim": "#ffb4a8",
+                    "surface": "#15130d",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "on-background": "#e7e2d6",
+                    "error": "#ffb4ab",
+                    "on-secondary-fixed": "#410000",
+                    "surface-container-low": "#1d1c15",
+                    "surface-tint": "#dec1af"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1200px",
+                    "gutter": "24px",
+                    "margin-desktop": "40px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Arvo"],
+                    "body-md": ["Work Sans"],
+                    "body-lg": ["Work Sans"],
+                    "headline-md": ["Arvo"],
+                    "label-lg": ["Work Sans"],
+                    "headline-lg-mobile": ["Arvo"],
+                    "display-lg": ["Arvo"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 bg-surface-container-highest border-b border-outline-variant shadow-md">
+<div class="font-headline-lg text-headline-lg text-tertiary uppercase tracking-wider">Twisted Minnow</div>
+<nav class="hidden md:flex gap-gutter">
+<a class="text-tertiary border-b-2 border-tertiary pb-1 font-bold font-label-lg transition-colors duration-200" href="index.html">Home</a>
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="menu.html">Menu</a>
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="about.html">About Us</a>
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="reviews.html">Reviews</a>
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="reviews.html#contact">Contact</a>
+</nav>
+<button class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-lg font-bold hover:scale-95 duration-100 ease-in-out transition-all border gold-border">
+            Reserve a Table
+        </button>
+</header>
+<main class="mt-20">
+<!-- Hero Section -->
+<section class="relative h-[819px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A macro close-up of a juicy gourmet burger topped with melted cheese, crispy bacon, and fresh lettuce, resting on a rustic weathered wooden table. The lighting is warm and amber-toned, creating a cozy bar atmosphere with a shallow depth of field that blurs the background. The visual style is rich and tactile, highlighting the textures of the charred meat and the grainy wood surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl7xa2zQs9jV-z0r_vDP2wmsLmxBwHdK-DdIg3NevQ9zeUDRQGLqDGYpn7nVxaEf94nwyyIdknEu9tCV6DC7c9WSYkjqp-TynCXW6IsFWNjUQToS-OVen_3LNRThfG3gqnftbdg5nvsRgawX0RiVx6IDrL24DjW3CjqGmsPS29UmvbP0Z3qKjSsOL-qSAtD4cdugLH_hqOtrTiS49MuAA8lAP08OOUPwxo657dxuH0GZmLtLvcjpp2ktyj9fEuQPI4zygTutAAXoU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile max-w-4xl animate-slide-up mt-12">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-unit-gutter drop-shadow-lg">Lake Tenkiller’s Favorite Bar &amp; Grill</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto animate-fade-in delay-200">Handmade burgers, legendary onion rings, cold beer, and a laid-back atmosphere just minutes from the lake.</p>
+<div class="flex flex-col items-center gap-6 animate-fade-in delay-300">
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<a href="menu.html" class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-xl font-bold text-lg gold-border shadow-xl hover:scale-95 transition-all">
+                        View Menu
+                    </a>
+<a href="reservations.html" class="bg-surface-container-high text-tertiary px-8 py-4 rounded-xl font-bold text-lg border border-tertiary/30 shadow-xl hover:scale-95 transition-all">
+                        Reserve a Table
+                    </a>
+</div>
+<!-- Text Links -->
+<div class="flex gap-8 justify-center mt-2">
+<a href="https://maps.app.goo.gl/qbKgSUqqqgornQUz8" target="_blank" class="flex items-center gap-2 text-on-surface hover:text-tertiary transition-colors font-bold group">
+<span class="material-symbols-outlined group-hover:-translate-y-1 transition-transform">directions</span>
+Get Directions
+</a>
+<a href="tel:+19185550199" class="flex items-center gap-2 text-on-surface hover:text-tertiary transition-colors font-bold group">
+<span class="material-symbols-outlined group-hover:-translate-y-1 transition-transform">call</span>
+Call Now
+</a>
+</div>
+</div>
+<!-- Trust Badges -->
+<div class="flex flex-wrap justify-center gap-3 mt-16 animate-slide-up delay-400">
+<div class="bg-surface-container-highest/60 backdrop-blur-md border border-outline-variant/50 text-on-surface px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2">
+<i class="fa-solid fa-star text-tertiary"></i> 4.3 Star Rating
+</div>
+<div class="bg-surface-container-highest/60 backdrop-blur-md border border-outline-variant/50 text-on-surface px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2">
+<i class="fa-solid fa-person-dress text-tertiary"></i> Women-Owned
+</div>
+<div class="bg-surface-container-highest/60 backdrop-blur-md border border-outline-variant/50 text-on-surface px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2">
+<i class="fa-solid fa-burger text-tertiary"></i> Family Friendly
+</div>
+<div class="bg-surface-container-highest/60 backdrop-blur-md border border-outline-variant/50 text-on-surface px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2">
+<i class="fa-solid fa-paw text-tertiary"></i> Pet Friendly
+</div>
+<div class="bg-surface-container-highest/60 backdrop-blur-md border border-outline-variant/50 text-on-surface px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2">
+<i class="fa-solid fa-beer-mug-empty text-tertiary"></i> Great Beer &amp; Cocktails
+</div>
+<div class="bg-surface-container-highest/60 backdrop-blur-md border border-outline-variant/50 text-on-surface px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2">
+<i class="fa-solid fa-gamepad text-tertiary"></i> Pool Tables &amp; Arcade Games
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Twisted Minnow -->
+<section class="py-20 px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16 animate-slide-up">
+<span class="text-tertiary font-label-lg tracking-widest uppercase mb-2 block">Why Choose Twisted Minnow</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">More Than a Restaurant. A Favorite Stop Near Lake Tenkiller.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto">Whether you're a local or visiting Lake Tenkiller, Twisted Minnow is the perfect place to enjoy hearty comfort food, cold drinks, and a welcoming atmosphere. From our famous homemade onion rings to our signature Twisted Burger, every meal is made to satisfy.</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant/30 flex items-start gap-4 animate-slide-up delay-100 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="restaurant">restaurant</span>
+<div class="font-bold text-on-surface text-lg">Homemade comfort food</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant/30 flex items-start gap-4 animate-slide-up delay-200 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="sports_bar">sports_bar</span>
+<div class="font-bold text-on-surface text-lg">Full bar with cocktails and ice-cold beer</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant/30 flex items-start gap-4 animate-slide-up delay-300 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="deck">deck</span>
+<div class="font-bold text-on-surface text-lg">Outdoor seating</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant/30 flex items-start gap-4 animate-slide-up delay-100 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="family_restroom">family_restroom</span>
+<div class="font-bold text-on-surface text-lg">Family-friendly atmosphere</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant/30 flex items-start gap-4 animate-slide-up delay-200 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="pool">pool</span>
+<div class="font-bold text-on-surface text-lg">Pool tables and arcade games</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant/30 flex items-start gap-4 animate-slide-up delay-300 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="location_on">location_on</span>
+<div class="font-bold text-on-surface text-lg">Conveniently located near Lake Tenkiller</div>
+</div>
+</div>
+</section>
+<!-- Signature Dishes -->
+<section class="bg-wood-index py-20">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex items-end justify-between mb-12">
+<div>
+<span class="text-tertiary font-label-lg tracking-widest uppercase mb-2 block">Our Favorites</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Signature Dishes</h2>
+</div>
+<a class="text-tertiary font-bold hover:underline mb-2" href="menu.html">View Full Menu</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Dish Card -->
+<div class="bg-primary-container rounded-xl overflow-hidden border gold-border burnt-shadow transition-transform hover:-translate-y-2">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover inner-shadow" data-alt="A thick, juicy Twisted Burger with double patties, melted sharp cheddar, and caramelized onions served on a toasted brioche bun. The lighting is focused and warm, making the meat appear succulent against a dark, rustic wood background. The style is premium food photography with high contrast and rich textures." src="https://lh3.googleusercontent.com/gpms-cs-s/ABJJf51EqdeN4KGeeKodoodOAh9qDhTqZ3guBvoX_9vcFfOIiQEEbJqYr3u4ArIcLvhgzfD16AE-TL9SLOetQ3se07A8uXu3T4KZ0eeAWcx7yDi0Zuq1bjk0-iJQAujCiS6wr_80NaO26A=w400-h822-k-no"/>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-tertiary mb-2">Twisted Burger</h3>
+<p class="text-on-surface-variant font-body-md">A juicy half-pound Angus beef burger topped with cream cheese and grilled jalapeños.</p>
+</div>
+</div>
+<!-- Dish Card -->
+<div class="bg-primary-container rounded-xl overflow-hidden border gold-border burnt-shadow transition-transform hover:-translate-y-2">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover inner-shadow" data-alt="A stack of colossal, hand-battered golden-brown onion rings served with a side of spicy dipping sauce. The rings are perfectly crispy with visible salt flakes, illuminated by side lighting that emphasizes their crunchy texture. The scene is set on a dark wooden tavern table, evoking a classic bar and grill vibe." src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHPXV8i5aI8mPAVgKEajxKQZv-Xz5ECnifQ3RDovT0rsaXQP3zqCH4Ffcmtx1G4A2tm2nfbtCOeL4MZXNhMTlF7utdvihjgQdXM3FsAfZkyO45Uy4oITbO7PCCZ5ysAGLC8ZN5bZQ=w258-h336-p-k-no"/>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-tertiary mb-2">Homemade Onion Rings</h3>
+<p class="text-on-surface-variant font-body-md">Fresh battered and cooked to golden perfection. A must-try favorite.</p>
+</div>
+</div>
+<!-- Dish Card -->
+<div class="bg-primary-container rounded-xl overflow-hidden border gold-border burnt-shadow transition-transform hover:-translate-y-2">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover inner-shadow" data-alt="A hearty Chicken Fried Steak smothered in thick, creamy white gravy, served alongside buttery mashed potatoes and green beans. The lighting is soft and inviting, suggesting a home-cooked family meal. The color palette is dominated by warm ambers and earthy browns, consistent with a rustic lodge aesthetic." src="https://flow-content.google/image/157e02f9-fe9a-4625-ba3f-ae107427b1e8?Expires=1778774690&KeyName=labs-flow-prod-cdn-key&Signature=zDciEyZohLU9K1xN207HAbPDTZg"/>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-tertiary mb-2">Chicken Fried Steak</h3>
+<p class="text-on-surface-variant font-body-md">Classic comfort food served hot and made to order.</p>
+</div>
+</div>
+<!-- Dish Card -->
+<div class="bg-primary-container rounded-xl overflow-hidden border gold-border burnt-shadow transition-transform hover:-translate-y-2">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover inner-shadow" data-alt="A mountain of crispy loaded fries topped with melted cheese, bacon bits, jalapeños, and a drizzle of ranch dressing. The lighting is bright and appetizing, highlighting the gooey textures of the toppings. The background features the dark grain of a heavy wooden bar counter." src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAE9LSAlK1kWv71w3ew9BWG4lFC_dPPHetIRkXuM-imK10hnxvIi79fa11tpfq48CQSHfcbLHBjZiD0br6o9XQKaSZqGOCTrWaswyWrD_pKzgK2iVX6Y8jJ0AUXwTM2i7ajGSY5_=w258-h336-p-k-no"/>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-tertiary mb-2">Loaded Fries</h3>
+<p class="text-on-surface-variant font-body-md">Crispy fries piled high with savory toppings.</p>
+</div>
+</div>
+<!-- Dish Card -->
+<div class="bg-primary-container rounded-xl overflow-hidden border gold-border burnt-shadow transition-transform hover:-translate-y-2">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover inner-shadow" data-alt="A rack of tender Baby Back Ribs glazed with a dark, smoky barbecue sauce, showing a perfect char. The lighting is dramatic and moody, emphasizing the sticky texture of the sauce and the succulent meat pulled slightly away from the bone. The style is rugged and authentic to a lakeside grill." src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEyqrmiWbvXkGQDXw76Jf4TNA1JTHVF9N0t2_gWJ9OrYu74QSsmZ5h-0WzlLMWLk2YSTcZ4caPuyGHe3PBO18qVLMKTJt0h-5W2bsyFQ3T9RZ--WGvSr5F1rIxyPA2tor7Iwboc=w258-h336-p-k-no"/>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-tertiary mb-2">Baby Back Ribs</h3>
+<p class="text-on-surface-variant font-body-md">Tender, flavorful, and slow-cooked to perfection.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials / Social Proof -->
+<section class="py-20 px-margin-desktop bg-surface-container relative">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-tertiary mb-4">Loved by Locals and Lake Visitors</h2>
+<p class="font-body-lg text-on-surface-variant">Rated 4.3 stars by dozens of happy customers.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Review 1 -->
+<div class="bg-surface-container-high rounded-xl p-6 shadow-md border border-outline-variant/30 flex flex-col">
+    <div class="flex justify-between items-start mb-4">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-lg">B</div>
+            <div>
+                <div class="font-bold text-on-surface text-sm">Benjamin Collins</div>
+                <div class="text-on-surface-variant text-xs">3 months ago</div>
+            </div>
+        </div>
+        <!-- Google G Logo -->
+        <svg class="w-5 h-5" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+        </svg>
+    </div>
+    <div class="flex items-center gap-1 mb-3">
+        <div class="flex text-[#FBBC04] text-lg tracking-widest">★ ★ ★ ★ ★</div>
+        <span class="material-symbols-outlined text-blue-500 text-sm ml-1" style="font-variation-settings: 'FILL' 1;">verified</span>
+    </div>
+    <p class="text-on-surface font-body-md">"Jason was phenomenal! Best part of our winter vacation to Tenkiller! We will definitely be back for our summer vacations this year because of him!"</p>
+</div>
+
+<!-- Review 2 -->
+<div class="bg-surface-container-high rounded-xl p-6 shadow-md border border-outline-variant/30 flex flex-col">
+    <div class="flex justify-between items-start mb-4">
+        <div class="flex items-center gap-3">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVaaUfoL0Sv2ztwQQxIOGBFvDnMGE4CiUFho2jy7m1W7Lhn_5xHoQ=w54-h54-p-rp-mo-ba5-br100" class="w-10 h-10 rounded-full object-cover">
+            <div>
+                <div class="font-bold text-on-surface text-sm">Charli Barnoskie</div>
+                <div class="text-on-surface-variant text-xs"></div>
+            </div>
+        </div>
+        <svg class="w-5 h-5" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+        </svg>
+    </div>
+    <div class="flex items-center gap-1 mb-3">
+        <div class="flex text-[#FBBC04] text-lg tracking-widest">★ ★ ★ ★ ★</div>
+        <span class="material-symbols-outlined text-blue-500 text-sm ml-1" style="font-variation-settings: 'FILL' 1;">verified</span>
+    </div>
+    <p class="text-on-surface font-body-md line-clamp-4">"This place is great! They’ll wine ya, dine ya, and let you wash your clothes too! They have booth seating, high top tables, as well as bar front seating..."</p>
+</div>
+
+<!-- Review 3 -->
+<div class="bg-surface-container-high rounded-xl p-6 shadow-md border border-outline-variant/30 flex flex-col">
+    <div class="flex justify-between items-start mb-4">
+        <div class="flex items-center gap-3">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXojb8bzZYZ1Py9s44KSqMiuYsZIGS1Bnw3mJ8LRThwXdVeIa1o=w54-h54-p-rp-mo-ba3-br100" class="w-10 h-10 rounded-full object-cover">
+            <div>
+                <div class="font-bold text-on-surface text-sm">GoatoGuy</div>
+                <div class="text-on-surface-variant text-xs"></div>
+            </div>
+        </div>
+        <svg class="w-5 h-5" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+        </svg>
+    </div>
+    <div class="flex items-center gap-1 mb-3">
+        <div class="flex text-[#FBBC04] text-lg tracking-widest">★ ★ ★ ★ ★</div>
+        <span class="material-symbols-outlined text-blue-500 text-sm ml-1" style="font-variation-settings: 'FILL' 1;">verified</span>
+    </div>
+    <p class="text-on-surface font-body-md">"Loaded fries 😃 Buffalo Wings off the charts. Awesome friendly down home Okie service. Doesn't get much better to me 😉"</p>
+</div>
+
+<!-- Review 4 -->
+<div class="bg-surface-container-high rounded-xl p-6 shadow-md border border-outline-variant/30 flex flex-col">
+    <div class="flex justify-between items-start mb-4">
+        <div class="flex items-center gap-3">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWE94HRU3vj3_rhCZjLf76SskAENM-MFd9sFu6k1rzA7v5WaPj5=w54-h54-p-rp-mo-ba3-br100" class="w-10 h-10 rounded-full object-cover">
+            <div>
+                <div class="font-bold text-on-surface text-sm">Lucas Mccain</div>
+                <div class="text-on-surface-variant text-xs">2 years ago</div>
+            </div>
+        </div>
+        <svg class="w-5 h-5" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+        </svg>
+    </div>
+    <div class="flex items-center gap-1 mb-3">
+        <div class="flex text-[#FBBC04] text-lg tracking-widest">★ ★ ★ ★ ★</div>
+        <span class="material-symbols-outlined text-blue-500 text-sm ml-1" style="font-variation-settings: 'FILL' 1;">verified</span>
+    </div>
+    <p class="text-on-surface font-body-md line-clamp-4">"Alisha was absolutely awesome and hooked us up with the best meal I have had in awhile. The catfish, chicken fried steak, nachos (off the menu)..."</p>
+</div>
+</div>
+
+<div class="flex justify-end mt-6">
+<div class="bg-[#e4f3eb] text-[#006e33] text-sm font-bold px-3 py-1 rounded flex items-center gap-1 border border-[#b2dfc8]">
+<span>Verified by Trustindex</span>
+<span class="material-symbols-outlined text-[16px]">info</span>
+</div>
+</div>
+
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-20 px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-tertiary mb-6">Find Your Way to the Minnow</h2>
+<p class="font-body-lg text-on-surface-variant mb-8">Located just minutes from the shores of Lake Tenkiller. Whether you're docking for the day or just driving through, we've got a seat waiting for you.</p>
+<div class="space-y-4 mb-10">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-tertiary" data-icon="location_on">location_on</span>
+<span class="text-on-surface">21383 E Carters Landing Rd, Park Hill, OK 74451, United States</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-tertiary" data-icon="phone">phone</span>
+<span class="text-on-surface">+1 918-414-5294</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-tertiary" data-icon="schedule">schedule</span>
+<span class="text-on-surface">Daily: 11am - 10pm</span>
+</div>
+</div>
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-xl font-bold flex items-center gap-2 gold-border hover:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="directions">directions</span>
+                        Get Directions
+                    </button>
+</div>
+<div class="h-96 rounded-xl overflow-hidden border gold-border burnt-shadow grayscale contrast-125">
+<iframe class="w-full h-full" src="https://maps.google.com/maps?q=Twisted%20Minnow%20Bar%20and%20Grill,%20Park%20Hill,%20OK&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-margin-desktop px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter items-start border-t border-outline-variant bg-surface-container">
+<div class="flex flex-col gap-4">
+<div class="font-headline-md text-headline-md text-tertiary">Twisted Minnow</div>
+<p class="font-body-md text-on-surface-variant">The soul of Lake Tenkiller since 1998. Great food, cold drinks, better company.</p>
+<p class="font-body-md text-on-surface-variant">© 2026 Twisted Minnow Bar &amp; Grill. Proudly Women-Owned.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="font-label-lg uppercase tracking-widest text-on-surface">Quick Links</div>
+<nav class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="tel:+1918-414-5294" target="_blank">Call Now</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://maps.app.goo.gl/qbKgSUqqqgornQUz8" target="_blank">Get Directions</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://www.facebook.com/twistedminnow.tk/" target="_blank">Facebook</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://www.instagram.com/twisted_minnow/" target="_blank">Instagram</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://www.travelok.com/state-parks/tenkiller-state-park" target="_blank">Lake Map</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<div class="font-label-lg uppercase tracking-widest text-on-surface">Newsletter</div>
+<p class="text-on-surface-variant font-body-md">Stay updated on events and specials.</p>
+<div class="flex gap-2">
+<input class="bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded focus:border-tertiary outline-none flex-grow" placeholder="Your email" type="email"/>
+<button class="bg-tertiary text-on-tertiary px-4 py-2 rounded font-bold hover:opacity-80 transition-opacity">Join</button>
+</div>
+</div>
+</footer>
+
+
+
+</body></html>

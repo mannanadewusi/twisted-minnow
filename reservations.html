@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reserve a Table | Twisted Minnow</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#323029",
+                    "secondary-fixed": "#ffdad4",
+                    "outline": "#9b8e87",
+                    "on-error-container": "#ffdad6",
+                    "surface-dim": "#15130d",
+                    "primary-fixed": "#fbddca",
+                    "on-primary": "#3f2c20",
+                    "secondary": "#ffb4a8",
+                    "on-surface-variant": "#d2c4bc",
+                    "surface-container-high": "#2c2a22",
+                    "outline-variant": "#4f453f",
+                    "on-primary-fixed-variant": "#574335",
+                    "background": "#15130d",
+                    "on-secondary-fixed-variant": "#920703",
+                    "tertiary-container": "#cca72f",
+                    "on-secondary": "#690000",
+                    "on-surface": "#e7e2d6",
+                    "surface-container-highest": "#36352d",
+                    "surface-container": "#212018",
+                    "secondary-container": "#920703",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "error-container": "#93000a",
+                    "tertiary": "#e9c349",
+                    "surface-container-lowest": "#0f0e08",
+                    "on-secondary-container": "#ff9a8a",
+                    "on-tertiary-container": "#4e3d00",
+                    "on-tertiary-fixed": "#241a00",
+                    "inverse-primary": "#705a4c",
+                    "on-tertiary": "#3c2f00",
+                    "on-primary-container": "#ac9181",
+                    "surface-bright": "#3b3931",
+                    "primary-fixed-dim": "#dec1af",
+                    "primary": "#dec1af",
+                    "inverse-surface": "#e7e2d6",
+                    "on-primary-fixed": "#28180d",
+                    "on-error": "#690005",
+                    "primary-container": "#3d2b1f",
+                    "surface-variant": "#36352d",
+                    "tertiary-fixed": "#ffe088",
+                    "secondary-fixed-dim": "#ffb4a8",
+                    "surface": "#15130d",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "on-background": "#e7e2d6",
+                    "error": "#ffb4ab",
+                    "on-secondary-fixed": "#410000",
+                    "surface-container-low": "#1d1c15",
+                    "surface-tint": "#dec1af"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1200px",
+                    "gutter": "24px",
+                    "margin-desktop": "40px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Arvo"],
+                    "body-md": ["Work Sans"],
+                    "body-lg": ["Work Sans"],
+                    "headline-md": ["Arvo"],
+                    "label-lg": ["Work Sans"],
+                    "headline-lg-mobile": ["Arvo"],
+                    "display-lg": ["Arvo"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-tertiary selection:text-on-tertiary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 bg-surface-container-highest border-b border-outline-variant shadow-md">
+<div class="font-headline-lg text-headline-lg text-tertiary uppercase tracking-wider">Twisted Minnow</div>
+<nav class="hidden md:flex gap-gutter">
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="index.html">Home</a>
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="menu.html">Menu</a>
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="about.html">About Us</a>
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="reviews.html">Reviews</a>
+<a class="text-tertiary border-b-2 border-tertiary pb-1 font-bold" href="reviews.html#contact">Contact</a>
+</nav>
+<a href="reservations.html"  class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-lg font-bold hover:scale-95 duration-100 ease-in-out border border-tertiary">
+            Reserve a Table
+        </a>
+</header>
+<!-- Main Content Canvas -->
+<main class="min-h-screen pt-32 pb-20 bg-wood-reservations relative flex items-center justify-center px-margin-mobile md:px-0">
+<!-- Background Alt for the Wood Texture Div -->
+<div class="sr-only" data-alt="A warm and inviting interior of a rustic lakeside bar and grill at Lake Tenkiller. The background features polished dark wood textures, glowing amber hanging lights, and vintage pool tables softly blurred in the distance. The mood is authentic and hospitable, with a rich color palette of deep browns, golds, and crimson accents creating a premium yet rugged atmosphere."></div>
+<section class="max-w-2xl w-full bg-primary-container p-8 md:p-12 rounded-xl burnt-shadow border border-outline-variant relative overflow-hidden animate-slide-up">
+<!-- Decorative Inner Gold Rim -->
+<div class="absolute inset-0 pointer-events-none inner-gold-rim opacity-30 rounded-xl"></div>
+<div class="text-center mb-10">
+<h1 class="font-headline-lg text-headline-lg text-tertiary mb-2">Secure Your Table</h1>
+<p class="font-body-md text-on-surface-variant">Experience the finest lakeside dining at Tenkiller</p>
+</div>
+<form action="#" class="space-y-6 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Date -->
+<div class="space-y-2">
+<label class="block text-label-lg font-label-lg text-on-surface uppercase tracking-wider">Date</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg p-3 text-on-surface focus:ring-1 focus:ring-tertiary focus:border-tertiary outline-none transition-all" type="date"/>
+</div>
+</div>
+<!-- Time -->
+<div class="space-y-2">
+<label class="block text-label-lg font-label-lg text-on-surface uppercase tracking-wider">Time</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg p-3 text-on-surface focus:ring-1 focus:ring-tertiary focus:border-tertiary outline-none transition-all appearance-none">
+<option>5:00 PM</option>
+<option>6:00 PM</option>
+<option>7:00 PM</option>
+<option>8:00 PM</option>
+<option>9:00 PM</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Party Size -->
+<div class="space-y-2">
+<label class="block text-label-lg font-label-lg text-on-surface uppercase tracking-wider">Party Size</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg p-3 text-on-surface focus:ring-1 focus:ring-tertiary focus:border-tertiary outline-none transition-all" max="10" min="1" placeholder="Number of guests" type="number"/>
+</div>
+<!-- Name -->
+<div class="space-y-2">
+<label class="block text-label-lg font-label-lg text-on-surface uppercase tracking-wider">Full Name</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg p-3 text-on-surface focus:ring-1 focus:ring-tertiary focus:border-tertiary outline-none transition-all" placeholder="Your reservation name" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-1 gap-6">
+<!-- Phone -->
+<div class="space-y-2">
+<label class="block text-label-lg font-label-lg text-on-surface uppercase tracking-wider">Phone Number</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg p-3 text-on-surface focus:ring-1 focus:ring-tertiary focus:border-tertiary outline-none transition-all" placeholder="(555) 000-0000" type="tel"/>
+</div>
+</div>
+<!-- Special Requests -->
+<div class="space-y-2">
+<label class="block text-label-lg font-label-lg text-on-surface uppercase tracking-wider">Special Requests</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg p-3 text-on-surface focus:ring-1 focus:ring-tertiary focus:border-tertiary outline-none transition-all resize-none" placeholder="Allergies, birthdays, or preferred seating..." rows="3"></textarea>
+</div>
+<!-- CTA -->
+<button class="w-full py-4 bg-secondary-container text-on-secondary-container rounded-lg font-headline-md text-headline-md border border-tertiary shadow-lg hover:brightness-110 active:translate-y-1 transition-all duration-200 mt-4" type="submit">
+                    Confirm Reservation
+                </button>
+<p class="text-center text-on-surface-variant font-label-lg mt-4">
+                    Parties larger than 10? Please <a class="text-tertiary underline" href="tel:+1918-414-5294">Call Now</a>.
+                </p>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-margin-desktop px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter items-start border-t border-outline-variant bg-surface-container">
+<div class="flex flex-col gap-4">
+<div class="font-headline-md text-headline-md text-tertiary">Twisted Minnow</div>
+<p class="font-body-md text-on-surface-variant">The soul of Lake Tenkiller since 1998. Great food, cold drinks, better company.</p>
+<p class="font-body-md text-on-surface-variant">© 2026 Twisted Minnow Bar &amp; Grill. Proudly Women-Owned.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="font-label-lg uppercase tracking-widest text-on-surface">Quick Links</div>
+<nav class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="tel:+1918-414-5294" target="_blank">Call Now</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://maps.app.goo.gl/qbKgSUqqqgornQUz8" target="_blank">Get Directions</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://www.facebook.com/twistedminnow.tk/" target="_blank">Facebook</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://www.instagram.com/twisted_minnow/" target="_blank">Instagram</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://www.travelok.com/state-parks/tenkiller-state-park" target="_blank">Lake Map</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<div class="font-label-lg uppercase tracking-widest text-on-surface">Newsletter</div>
+<p class="text-on-surface-variant font-body-md">Stay updated on events and specials.</p>
+<div class="flex gap-2">
+<input class="bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded focus:border-tertiary outline-none flex-grow" placeholder="Your email" type="email"/>
+<button class="bg-tertiary text-on-tertiary px-4 py-2 rounded font-bold hover:opacity-80 transition-opacity">Join</button>
+</div>
+</div>
+</footer>
+</body></html>

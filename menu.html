@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu | Twisted Minnow Bar &amp; Grill</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-on-surface": "#323029",
+                      "secondary-fixed": "#ffdad4",
+                      "outline": "#9b8e87",
+                      "on-error-container": "#ffdad6",
+                      "surface-dim": "#15130d",
+                      "primary-fixed": "#fbddca",
+                      "on-primary": "#3f2c20",
+                      "secondary": "#ffb4a8",
+                      "on-surface-variant": "#d2c4bc",
+                      "surface-container-high": "#2c2a22",
+                      "outline-variant": "#4f453f",
+                      "on-primary-fixed-variant": "#574335",
+                      "background": "#15130d",
+                      "on-secondary-fixed-variant": "#920703",
+                      "tertiary-container": "#cca72f",
+                      "on-secondary": "#690000",
+                      "on-surface": "#e7e2d6",
+                      "surface-container-highest": "#36352d",
+                      "surface-container": "#212018",
+                      "secondary-container": "#920703",
+                      "tertiary-fixed-dim": "#e9c349",
+                      "error-container": "#93000a",
+                      "tertiary": "#e9c349",
+                      "surface-container-lowest": "#0f0e08",
+                      "on-secondary-container": "#ff9a8a",
+                      "on-tertiary-container": "#4e3d00",
+                      "on-tertiary-fixed": "#241a00",
+                      "inverse-primary": "#705a4c",
+                      "on-tertiary": "#3c2f00",
+                      "on-primary-container": "#ac9181",
+                      "surface-bright": "#3b3931",
+                      "primary-fixed-dim": "#dec1af",
+                      "primary": "#dec1af",
+                      "inverse-surface": "#e7e2d6",
+                      "on-primary-fixed": "#28180d",
+                      "on-error": "#690005",
+                      "primary-container": "#3d2b1f",
+                      "surface-variant": "#36352d",
+                      "tertiary-fixed": "#ffe088",
+                      "secondary-fixed-dim": "#ffb4a8",
+                      "surface": "#15130d",
+                      "on-tertiary-fixed-variant": "#574500",
+                      "on-background": "#e7e2d6",
+                      "error": "#ffb4ab",
+                      "on-secondary-fixed": "#410000",
+                      "surface-container-low": "#1d1c15",
+                      "surface-tint": "#dec1af"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "container-max": "1200px",
+                      "gutter": "24px",
+                      "margin-desktop": "40px",
+                      "margin-mobile": "16px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Arvo"],
+                      "body-md": ["Work Sans"],
+                      "body-lg": ["Work Sans"],
+                      "headline-md": ["Arvo"],
+                      "label-lg": ["Work Sans"],
+                      "headline-lg-mobile": ["Arvo"],
+                      "display-lg": ["Arvo"]
+              },
+              "fontSize": {
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                      "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-menu-page font-body-md text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 bg-surface-container-highest border-b border-outline-variant shadow-md">
+<div class="font-headline-lg text-headline-lg text-tertiary uppercase tracking-wider">Twisted Minnow</div>
+<nav class="hidden md:flex gap-8">
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="index.html">Home</a>
+<a class="text-tertiary border-b-2 border-tertiary pb-1 font-bold" href="menu.html">Menu</a>
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="about.html">About Us</a>
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="reviews.html">Reviews</a>
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="reviews.html#contact">Contact</a>
+</nav>
+<button class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-lg font-bold hover:scale-95 duration-100 ease-in-out transition-all">Reserve a Table</button>
+</header>
+<main class="pt-32 pb-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Section -->
+<section class="mb-16 text-center animate-slide-up">
+<h1 class="font-display-lg text-display-lg text-tertiary mb-4">Our Menu</h1>
+<p class="font-body-lg text-body-lg max-w-2xl mx-auto text-on-surface-variant animate-fade-in delay-200">
+                Authentic lakeside flavors crafted with passion. From our signature smoked meats to hand-battered favorites, every dish is a tribute to Lake Tenkiller's spirit.
+            </p>
+</section>
+<!-- Category: Appetizers -->
+<section class="mb-20">
+<div class="flex items-center gap-4 mb-8">
+<h2 class="font-headline-lg text-headline-lg text-tertiary">Appetizers</h2>
+<div class="flex-grow h-px bg-outline-variant"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Highlight: Legendary Onion Rings -->
+<div class="md:col-span-2 bg-primary-container gold-border rounded-xl overflow-hidden burnt-shadow flex flex-col md:flex-row animate-slide-up delay-100">
+<div class="md:w-1/2 h-64 md:h-auto bg-surface-container-lowest overflow-hidden flex items-center justify-center p-4">
+<img class="w-full h-full object-contain drop-shadow-lg" data-alt="A macro photograph of golden-brown, hand-battered onion rings stacked high on a dark wooden board. The lighting is warm and amber, highlighting the crispy texture and glistening oil. Steam gently rises from the stack, set against a blurred background of a rustic bar with warm glowing lamps. The overall mood is indulgent and savory." src="https://lh3.googleusercontent.com/gpms-cs-s/ABJJf504yEWFxwokt6kiP0xBJFBaZJYxh8W5S5tEujoi-7c_1Q538tO-8YaUeZayB_iwA1v9_UDuBpej3W--jFvLtJSAf52_auzpEhrWiqffeenh1oGysafE9AupwKiwqRyC5jHCFi63IA=w400-h304-k-no"/>
+</div>
+<div class="p-8 flex flex-col justify-center">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-tertiary">Bacon Cheeseburger Steak w Onion Rings</h3>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded font-bold text-label-lg">$12</span>
+</div>
+<p class="text-on-surface-variant mb-6">Our claim to fame. Jumbo Texas sweets, hand-sliced and double-dipped in our secret spiced batter. Served with zesty remoulade.</p>
+<div class="flex gap-2">
+<span class="bg-surface-container-low text-tertiary gold-border px-3 py-1 text-xs rounded-full uppercase tracking-widest">House Specialty</span>
+<span class="bg-surface-container-low text-tertiary gold-border px-3 py-1 text-xs rounded-full uppercase tracking-widest">Shareable</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container gold-border p-6 rounded-xl flex flex-col justify-between animate-slide-up delay-200">
+<div>
+<div class="flex justify-between mb-2">
+<h4 class="font-headline-md text-headline-md text-on-surface">Lake Sliders</h4>
+<span class="text-secondary font-bold">$14</span>
+</div>
+<p class="text-on-surface-variant text-sm">Three mini wagyu burgers with caramelized onions and smoked gouda.</p>
+</div>
+<div class="mt-6">
+<div class="flex justify-between mb-2">
+<h4 class="font-headline-md text-headline-md text-on-surface">Fried Pickles</h4>
+<span class="text-secondary font-bold">$10</span>
+</div>
+<p class="text-on-surface-variant text-sm">Crispy dill chips with a kick of cayenne and house ranch.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Category: Entrees (Asymmetric Bento) -->
+<section class="mb-20">
+<div class="flex items-center gap-4 mb-8">
+<h2 class="font-headline-lg text-headline-lg text-tertiary">Main Entrees</h2>
+<div class="flex-grow h-px bg-outline-variant"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Highlight: Chicken Fried Steak -->
+<div class="md:col-span-7 bg-surface-container gold-border rounded-xl overflow-hidden burnt-shadow animate-slide-up delay-100">
+<div class="h-80 relative">
+<img class="w-full h-full object-cover" data-alt="A premium close-up of a massive chicken fried steak smothered in thick, creamy black pepper gravy. The steak is served on a heavy stoneware plate resting on a dark walnut table. The lighting is low-key with a golden rim light that emphasizes the craggy, crispy coating of the steak. The side of mashed potatoes is visible in the soft bokeh background." src="https://flow-content.google/image/157e02f9-fe9a-4625-ba3f-ae107427b1e8?Expires=1778774690&KeyName=labs-flow-prod-cdn-key&Signature=zDciEyZohLU9K1xN207HAbPDTZg"/>
+<div class="absolute bottom-4 right-4 bg-secondary-container text-on-secondary-container px-4 py-2 rounded font-bold text-headline-md">$22</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-headline-md text-tertiary mb-2 uppercase tracking-wide">The Minnow's Chicken Fried Steak</h3>
+<p class="text-on-surface-variant">Center-cut tenderloin, tenderized in-house and pan-fried to perfection. Topped with our famous cracked pepper cream gravy. A Tenkiller tradition.</p>
+</div>
+</div>
+<!-- Highlight: Catfish & Ribs -->
+<div class="md:col-span-5 flex flex-col gap-gutter animate-slide-up delay-200">
+<div class="bg-primary-container gold-border p-6 rounded-xl flex-grow burnt-shadow">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-md text-headline-md text-tertiary">Double Bacon Cheeseburger w lg Sided Onion Rings </h3>
+<p class="text-on-surface-variant text-sm">Double patty, cheddar, and smoky bacon, served with a large side of jumbo Texas sweets.</p>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded font-bold">$19</span>
+</div>
+<img class="w-full h-40 object-cover rounded shadow-inner border border-outline-variant/30" data-alt="A double bacon cheeseburger served with a large side of golden-brown onion rings." src="https://lh3.googleusercontent.com/gpms-cs-s/ABJJf53Bb4bjQZXr68l8xTP__MdG3CJP8B7TVq43cMPCLB1VEj1fZY7j6onWEYb6wKVK_ZCztt3UOegD3O7mC9sx8nKap0CKqQuE2Saudohf-57rk1wO4QiCqGpnCfDm_a585RBLkxsb=w400-h194-k-no"/>
+</div>
+<div class="bg-surface-container-high gold-border p-6 rounded-xl flex-grow burnt-shadow">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-md text-headline-md text-tertiary">Baby Back Ribs</h3>
+<p class="text-on-surface-variant text-sm">Half rack, slow-smoked for 12 hours with hickory wood.</p>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded font-bold">$26</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Burgers & Sides -->
+<section class="mb-20 grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Burgers -->
+<div class="animate-slide-up delay-100">
+<div class="flex items-center gap-4 mb-8">
+<h2 class="font-headline-lg text-headline-lg text-tertiary">Burgers</h2>
+<div class="flex-grow h-px bg-outline-variant"></div>
+</div>
+<div class="space-y-6">
+<div class="flex justify-between items-end border-b border-outline-variant pb-4">
+<div>
+<h3 class="font-headline-md text-on-surface">The Twisted Burger</h3>
+<p class="text-on-surface-variant text-sm">Double patty, bacon jam, ghost pepper jack, crispy onions.</p>
+</div>
+<span class="text-secondary font-bold font-headline-md">$17</span>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant pb-4">
+<div>
+<h3 class="font-headline-md text-on-surface">Classic Creek</h3>
+<p class="text-on-surface-variant text-sm">Half-pound beef, cheddar, lettuce, tomato, house pickle.</p>
+</div>
+<span class="text-secondary font-bold font-headline-md">$15</span>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant pb-4">
+<div>
+<h3 class="font-headline-md text-on-surface">Mushroom Swiss</h3>
+<p class="text-on-surface-variant text-sm">Sautéed cremini mushrooms, aged swiss, roasted garlic aioli.</p>
+</div>
+<span class="text-secondary font-bold font-headline-md">$16</span>
+</div>
+</div>
+</div>
+<!-- Sides -->
+<div class="animate-slide-up delay-200">
+<div class="flex items-center gap-4 mb-8">
+<h2 class="font-headline-lg text-headline-lg text-tertiary">Sides</h2>
+<div class="flex-grow h-px bg-outline-variant"></div>
+</div>
+<div class="bg-primary-container gold-border p-8 rounded-xl burnt-shadow">
+<div class="mb-8">
+<div class="flex justify-between items-center mb-2">
+<h3 class="font-headline-md text-tertiary">Loaded Fries</h3>
+<span class="text-secondary font-bold">$9</span>
+</div>
+<p class="text-on-surface-variant">Hand-cut spuds topped with beer cheese, bacon bits, chives, and a drizzle of ranch. A local favorite.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="text-on-surface">Mashed Potatoes</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="text-on-surface">Creamy Slaw</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="text-on-surface">Grilled Asparagus</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="text-on-surface">Hushpuppies</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Drinks Section -->
+<section class="mb-20 bg-surface-container-low rounded-2xl p-10 gold-border relative overflow-hidden animate-fade-in delay-300">
+<div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+<div class="relative z-10">
+<div class="text-center mb-12">
+<h2 class="font-display-lg text-display-lg text-tertiary">Beer &amp; Cocktails</h2>
+<p class="text-on-surface-variant uppercase tracking-widest text-sm mt-2">Crafted for the Lakeside</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<div>
+<h3 class="font-headline-md text-tertiary border-b border-tertiary/30 mb-6 pb-2">Draft Favorites</h3>
+<ul class="space-y-4">
+<li class="flex justify-between"><span>Minnow Pale Ale</span><span class="text-secondary font-bold">$7</span></li>
+<li class="flex justify-between"><span>Tenkiller Lager</span><span class="text-secondary font-bold">$6</span></li>
+<li class="flex justify-between"><span>Hickory Smoked Porter</span><span class="text-secondary font-bold">$8</span></li>
+<li class="flex justify-between"><span>Seasonal Rotator</span><span class="text-secondary font-bold">Mkt</span></li>
+</ul>
+</div>
+<div>
+<h3 class="font-headline-md text-tertiary border-b border-tertiary/30 mb-6 pb-2">Signature Cocktails</h3>
+<ul class="space-y-4">
+<li class="flex justify-between"><span>Lake Sunset Martini</span><span class="text-secondary font-bold">$13</span></li>
+<li class="flex justify-between"><span>The Rusty Hook</span><span class="text-secondary font-bold">$12</span></li>
+<li class="flex justify-between"><span>Minnow Mule</span><span class="text-secondary font-bold">$11</span></li>
+<li class="flex justify-between"><span>Dockside Old Fashioned</span><span class="text-secondary font-bold">$14</span></li>
+</ul>
+</div>
+<div class="bg-surface-container-high p-6 rounded-lg gold-border flex items-center justify-center text-center">
+<div>
+<span class="material-symbols-outlined text-tertiary text-5xl mb-4">wine_bar</span>
+<h4 class="font-headline-md text-on-surface mb-2">Happy Hour</h4>
+<p class="text-on-surface-variant text-sm">Daily 4PM - 6PM<br/>$2 Off All Drafts &amp; House Cocktails</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-margin-desktop px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter items-start border-t border-outline-variant bg-surface-container">
+<div class="flex flex-col gap-4">
+<div class="font-headline-md text-headline-md text-tertiary">Twisted Minnow</div>
+<p class="font-body-md text-on-surface-variant">The soul of Lake Tenkiller since 1998. Great food, cold drinks, better company.</p>
+<p class="font-body-md text-on-surface-variant">© 2026 Twisted Minnow Bar &amp; Grill. Proudly Women-Owned.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="font-label-lg uppercase tracking-widest text-on-surface">Quick Links</div>
+<nav class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="tel:+1918-414-5294" target="_blank">Call Now</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://maps.app.goo.gl/qbKgSUqqqgornQUz8" target="_blank">Get Directions</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://www.facebook.com/twistedminnow.tk/" target="_blank">Facebook</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://www.instagram.com/twisted_minnow/" target="_blank">Instagram</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://www.travelok.com/state-parks/tenkiller-state-park" target="_blank">Lake Map</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<div class="font-label-lg uppercase tracking-widest text-on-surface">Newsletter</div>
+<p class="text-on-surface-variant font-body-md">Stay updated on events and specials.</p>
+<div class="flex gap-2">
+<input class="bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded focus:border-tertiary outline-none flex-grow" placeholder="Your email" type="email"/>
+<button class="bg-tertiary text-on-tertiary px-4 py-2 rounded font-bold hover:opacity-80 transition-opacity">Join</button>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Twisted Minnow</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "inverse-on-surface": "#323029",
+                  "secondary-fixed": "#ffdad4",
+                  "outline": "#9b8e87",
+                  "on-error-container": "#ffdad6",
+                  "surface-dim": "#15130d",
+                  "primary-fixed": "#fbddca",
+                  "on-primary": "#3f2c20",
+                  "secondary": "#ffb4a8",
+                  "on-surface-variant": "#d2c4bc",
+                  "surface-container-high": "#2c2a22",
+                  "outline-variant": "#4f453f",
+                  "on-primary-fixed-variant": "#574335",
+                  "background": "#15130d",
+                  "on-secondary-fixed-variant": "#920703",
+                  "tertiary-container": "#cca72f",
+                  "on-secondary": "#690000",
+                  "on-surface": "#e7e2d6",
+                  "surface-container-highest": "#36352d",
+                  "surface-container": "#212018",
+                  "secondary-container": "#920703",
+                  "tertiary-fixed-dim": "#e9c349",
+                  "error-container": "#93000a",
+                  "tertiary": "#e9c349",
+                  "surface-container-lowest": "#0f0e08",
+                  "on-secondary-container": "#ff9a8a",
+                  "on-tertiary-container": "#4e3d00",
+                  "on-tertiary-fixed": "#241a00",
+                  "inverse-primary": "#705a4c",
+                  "on-tertiary": "#3c2f00",
+                  "on-primary-container": "#ac9181",
+                  "surface-bright": "#3b3931",
+                  "primary-fixed-dim": "#dec1af",
+                  "primary": "#dec1af",
+                  "inverse-surface": "#e7e2d6",
+                  "on-primary-fixed": "#28180d",
+                  "on-error": "#690005",
+                  "primary-container": "#3d2b1f",
+                  "surface-variant": "#36352d",
+                  "tertiary-fixed": "#ffe088",
+                  "secondary-fixed-dim": "#ffb4a8",
+                  "surface": "#15130d",
+                  "on-tertiary-fixed-variant": "#574500",
+                  "on-background": "#e7e2d6",
+                  "error": "#ffb4ab",
+                  "on-secondary-fixed": "#410000",
+                  "surface-container-low": "#1d1c15",
+                  "surface-tint": "#dec1af"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.125rem",
+                  "lg": "0.25rem",
+                  "xl": "0.5rem",
+                  "full": "0.75rem"
+          },
+          "spacing": {
+                  "unit": "8px",
+                  "container-max": "1200px",
+                  "gutter": "24px",
+                  "margin-desktop": "40px",
+                  "margin-mobile": "16px"
+          },
+          "fontFamily": {
+                  "headline-lg": ["Arvo"],
+                  "body-md": ["Work Sans"],
+                  "body-lg": ["Work Sans"],
+                  "headline-md": ["Arvo"],
+                  "label-lg": ["Work Sans"],
+                  "headline-lg-mobile": ["Arvo"],
+                  "display-lg": ["Arvo"]
+          },
+          "fontSize": {
+                  "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                  "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                  "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                  "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                  "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                  "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                  "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+          }
+        },
+      },
+    }
+  </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-body-md text-on-surface bg-wood-about">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 bg-surface-container-highest shadow-md border-b border-outline-variant">
+<div class="font-headline-lg text-headline-lg text-tertiary uppercase tracking-wider">Twisted Minnow</div>
+<nav class="hidden md:flex gap-8">
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="index.html">Home</a>
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="menu.html">Menu</a>
+<a class="text-tertiary border-b-2 border-tertiary pb-1 font-bold font-label-lg" href="about.html">About Us</a>
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="reviews.html">Reviews</a>
+<a class="text-on-surface-variant font-label-lg hover:text-tertiary-fixed transition-colors duration-200" href="reviews.html#contact">Contact</a>
+</nav>
+<a href="reservations.html"  class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-lg font-bold hover:scale-95 transition-all duration-100 ease-in-out border border-[#D4AF37]">
+      Reserve a Table
+    </a>
+</header>
+<main class="pt-24 pb-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Narrative Section -->
+<section class="py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center animate-fade-in delay-100">
+<div class="order-2 md:order-1">
+<h1 class="font-display-lg text-display-lg text-tertiary mb-6">Our Lake Story</h1>
+<div class="space-y-6 text-on-surface-variant">
+<p class="font-body-lg text-body-lg">
+            Nestled on the shores of Lake Tenkiller, Twisted Minnow isn't just a bar and grill—it's a labor of love. As a women-owned business, we set out to create a space that balances the rugged spirit of the Oklahoma outdoors with a refined, high-end dining experience.
+          </p>
+<p class="font-body-md text-body-md">
+            Our journey began with a simple dream: a place where the local community and lake visitors could gather over exceptional food, cold drinks, and genuine hospitality. Every piece of wood in our rafters and every vintage fixture in our hall was chosen to tell a story of craftsmanship and Lake Tenkiller history.
+          </p>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<div class="modern-rustic-card p-2 rounded-xl overflow-hidden transform rotate-2 burnt-shadow">
+<img alt="The Founders of Twisted Minnow" class="w-full h-auto rounded-lg grayscale-[0.2] contrast-110" data-alt="A warm, atmospheric portrait of two professional female business owners smiling warmly inside a rustic restaurant setting. The lighting is golden and amber, catching the textures of wood-paneled walls and copper fixtures behind them. They are dressed in smart-casual attire that blends with the high-end rustic aesthetic of the Lake Tenkiller establishment." src="https://scontent.fiba2-1.fna.fbcdn.net/v/t39.30808-6/607960367_1328656755971571_6078330023430188220_n.jpg?stp=c0.19.1991.1991a_dst-jpg_s206x206_tt6&_nc_cat=100&ccb=1-7&_nc_sid=50ad20&_nc_eui2=AeEBtw-336BvnWSKCXAmE6pUNA3SFYgPPXA0DdIViA89cBa8xcrkHIiL46Ag8_lI8zFwHlUdqlQnE-fx_1PNzdrd&_nc_ohc=iq9b0nyXqPcQ7kNvwHFlfy5&_nc_oc=AdpvBBguEk66XK708oftaGNn7glrm4O2uJhsDpvmbL0bqCh1bv1Z59R_L10cQMMFX-M&_nc_zt=23&_nc_ht=scontent.fiba2-1.fna&_nc_gid=mlI3u0rFpZ9ubmFAZlmHrg&_nc_ss=7b2a8&oh=00_Af6PKaaiLzz2ERnvMCbz3FQEFkQ7UTfx3sHWFLRUV8Hj8w&oe=6A0B5134"/>
+</div>
+</div>
+</section>
+<!-- Modern Rustic Atmosphere - Asymmetric Layout -->
+<section class="py-16">
+<div class="text-center mb-16 animate-slide-up delay-100">
+<h2 class="font-headline-lg text-headline-lg text-tertiary uppercase tracking-widest">The Atmosphere</h2>
+<div class="w-24 h-1 bg-tertiary mx-auto mt-4"></div>
+</div>
+<div class="grid grid-cols-12 gap-gutter">
+<!-- Arcade/Pool Hall -->
+<div class="col-span-12 md:col-span-7 relative group animate-slide-up delay-200">
+<div class="modern-rustic-card rounded-xl overflow-hidden aspect-video">
+<img alt="The Arcade and Pool Hall" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An inviting, low-lit pool hall and arcade area inside a rustic lakeside bar. The pool table has a deep burgundy felt top, and the room is filled with warm light from vintage industrial pendants. Polished wood floors and log cabin style walls create a grounded, authentic Lake Tenkiller spirit. In the background, classic arcade cabinets glow softly." src="https://lh3.googleusercontent.com/gpms-cs-s/ABJJf52wZ0kvHcihLlkTfY_j0kO2QF7ItEqU5ysnV4KIwnw8hl7SNjGUv4COYEvDMtJ067wnXyZUYVHCkmA3dRY4P5b-ve5DxMbPgHecl8IrnzfNmHw8fseWB4WLB8OE671kP_tmrGxOqPnAE3zd=w400-h300-k-no"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<h3 class="font-headline-md text-headline-md text-tertiary">Arcade &amp; Pool Hall</h3>
+<p class="text-on-surface-variant font-body-md">A nod to classic lakeside fun with a premium twist.</p>
+</div>
+</div>
+</div>
+<!-- Outdoor Seating -->
+<div class="col-span-12 md:col-span-5 flex flex-col justify-center gap-8 animate-slide-up delay-300">
+<div class="modern-rustic-card rounded-xl overflow-hidden aspect-square">
+<img alt="Outdoor Seating Area" class="w-full h-full object-cover" data-alt="A beautiful outdoor patio dining area overlooking a serene lake at sunset. Large wooden tables with gold-trimmed settings are arranged under strings of Edison bulbs. The atmosphere is peaceful and high-end, featuring stone pillars and heavy timber framing that blends perfectly with the natural Oklahoma landscape around Lake Tenkiller." src="https://lh3.googleusercontent.com/p/AF1QipP4QChE-k7JE0zD844e9CdlU8m4oZs8kT1Pvfky=w400-h300-k-no"/>
+</div>
+<div class="p-6 border-l-4 border-tertiary bg-surface-container-low">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Lakeside Views</h4>
+<p class="font-body-md text-on-surface-variant italic">"Where the sunset over Tenkiller meets the comfort of home."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Lakeside Traditions Section - Bento Style -->
+<section class="py-16 bg-surface-container-lowest/50 rounded-3xl p-8 border border-outline-variant animate-fade-in delay-100">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+<div>
+<span class="text-tertiary font-label-lg tracking-[0.2em] uppercase">Honoring the Water</span>
+<h2 class="font-display-lg text-display-lg text-on-surface mt-2">Lakeside Traditions</h2>
+</div>
+<p class="max-w-md text-on-surface-variant font-body-md text-right">
+          We believe in preserving the rituals that make lake life special. From the first catch of the morning to the final bonfire of the night.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Tradition 1 -->
+<div class="modern-rustic-card p-8 rounded-2xl flex flex-col items-center text-center animate-slide-up delay-200">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-6 gold-rim">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-size: 32px;">set_meal</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-tertiary mb-4">The Daily Catch</h3>
+<p class="text-on-surface-variant font-body-md">Sourcing our ingredients from local purveyors to ensure that "fresh-off-the-boat" quality in every bite.</p>
+</div>
+<!-- Tradition 2 -->
+<div class="modern-rustic-card p-8 rounded-2xl flex flex-col items-center text-center animate-slide-up delay-300">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-6 gold-rim">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-size: 32px;">fireplace</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-tertiary mb-4">Hearth &amp; Home</h3>
+<p class="text-on-surface-variant font-body-md">Our fire pit is the heart of the patio, where stories are swapped and new friendships are forged nightly.</p>
+</div>
+<!-- Tradition 3 -->
+<div class="modern-rustic-card p-8 rounded-2xl flex flex-col items-center text-center animate-slide-up delay-400">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-6 gold-rim">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-size: 32px;">groups</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-tertiary mb-4">Community Spirit</h3>
+<p class="text-on-surface-variant font-body-md">Proudly hosting local events and supporting Tenkiller conservation efforts as a family-owned pillar.</p>
+</div>
+</div>
+</section>
+<!-- Staff Feature -->
+<section class="py-20 animate-fade-in delay-200">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-tertiary/20 rounded-full blur-2xl"></div>
+<img alt="Our Passionate Staff" class="w-full h-auto md:h-96 object-cover rounded-2xl gold-rim shadow-2xl relative z-10" data-alt="A candid, high-quality photograph of a diverse, friendly kitchen and front-of-house staff standing together in a warm, wood-accented restaurant interior. They are laughing and looking at each other, wearing professional dark aprons with a leather 'Twisted Minnow' logo. The lighting is warm and amber, emphasizing a family-table atmosphere and modern rustic design." src="https://scontent.fiba2-3.fna.fbcdn.net/v/t39.30808-6/605774896_1328656625971584_8568828598230975220_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFGBKFoO7W4fkjC-QEIzDFF-WkmffPlvyr5aSZ98-W_KkaJNd44HNjyGCCPaxw_8jD6JMLDYTcvMis6vPeCGPoo&_nc_ohc=I2J_npObtiIQ7kNvwH-_pBJ&_nc_oc=AdrLzRPk20UApD8GSQxCoSQq2JTB9xsLSy2d98xL834xNlNmyzjXd_jfzgv1u8OS4NA&_nc_zt=23&_nc_ht=scontent.fiba2-3.fna&_nc_gid=Ev99fODXBDmOKhezDenUOA&_nc_ss=7b2a8&oh=00_Af7LktafFJKVccOsw-cJk7fJcGgQns-hLsP0SGNXmuoSzQ&oe=6A0B61C8"/>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-tertiary mb-6">The Faces of the Minnow</h2>
+<p class="font-body-lg text-body-lg text-on-surface mb-8">
+            Our team is more than just staff; they are the hosts of your lake getaway. Each member brings a passion for service and a deep love for the Tenkiller area.
+          </p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-4 rounded-xl bg-surface-container/50 border border-outline-variant">
+<span class="material-symbols-outlined text-tertiary">verified</span>
+<span class="font-label-lg text-on-surface uppercase tracking-wide">Hospitality First Culture</span>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-xl bg-surface-container/50 border border-outline-variant">
+<span class="material-symbols-outlined text-tertiary">restaurant</span>
+<span class="font-label-lg text-on-surface uppercase tracking-wide">Expert Culinary Craftsmanship</span>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-xl bg-surface-container/50 border border-outline-variant">
+<span class="material-symbols-outlined text-tertiary">handshake</span>
+<span class="font-label-lg text-on-surface uppercase tracking-wide">Committed to Local Growth</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-margin-desktop px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter items-start border-t border-outline-variant bg-surface-container">
+<div class="flex flex-col gap-4">
+<div class="font-headline-md text-headline-md text-tertiary">Twisted Minnow</div>
+<p class="font-body-md text-on-surface-variant">The soul of Lake Tenkiller since 1998. Great food, cold drinks, better company.</p>
+<p class="font-body-md text-on-surface-variant">© 2026 Twisted Minnow Bar &amp; Grill. Proudly Women-Owned.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="font-label-lg uppercase tracking-widest text-on-surface">Quick Links</div>
+<nav class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="tel:+1918-414-5294" target="_blank">Call Now</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://maps.app.goo.gl/qbKgSUqqqgornQUz8" target="_blank">Get Directions</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://www.facebook.com/twistedminnow.tk/" target="_blank">Facebook</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://www.instagram.com/twisted_minnow/" target="_blank">Instagram</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="https://www.travelok.com/state-parks/tenkiller-state-park" target="_blank">Lake Map</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<div class="font-label-lg uppercase tracking-widest text-on-surface">Newsletter</div>
+<p class="text-on-surface-variant font-body-md">Stay updated on events and specials.</p>
+<div class="flex gap-2">
+<input class="bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded focus:border-tertiary outline-none flex-grow" placeholder="Your email" type="email"/>
+<button class="bg-tertiary text-on-tertiary px-4 py-2 rounded font-bold hover:opacity-80 transition-opacity">Join</button>
+</div>
+</div>
+</footer>
+</body></html>

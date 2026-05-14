@@ -1,0 +1,116 @@
+/* =========================================
+   Base Utilities
+   ========================================= */
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.gold-border, .gold-rim {
+    border: 1px solid #D4AF37;
+}
+
+.burnt-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+}
+
+.burnt-shadow-heavy {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.inner-gold-rim {
+    box-shadow: inset 0 0 0 1px #D4AF37;
+}
+
+.inner-shadow-recess {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.modern-rustic-card {
+    background-color: #3D2B1F;
+    border: 1px solid #D4AF37;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+}
+
+/* =========================================
+   Page-Specific Backgrounds
+   ========================================= */
+
+.bg-wood-index {
+    background-image: linear-gradient(rgba(21, 19, 13, 0.8), rgba(21, 19, 13, 0.8)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuC-8qhLwprfC44gBSUnsuQFhhjI8zfdlvWtfI8iB_XjN8_sg_PNH4G52Ot21krPpHLzuYJ3gRSekftyGml7gS-OKQW4mmwn5O7nGNEnItmR6QLYnVain4ncy6vFknmCXRTLly3lp2RiGhxqGjh0IfGILzXp1Z00Ixb7mumL71g7HKB7iMHmZg13snSpHXe0MbMxFBxuvt0r16aFpwDVWhr3xSAxfrDqSZL7p6LTz2WstwDc4E9eeWjeeQCVhUUTN9JfIz221-FV0EE);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-menu-page {
+    background-color: #15130d;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuA4Szc0VjrKp2cN93uMEqm3GGrTI-PQ-SgMPj66eGnPAuE-IDlGp3gQJ6U8_hP5EDm8YSzuNdkOV2QMu9SkWTjpbdrYevDS0EVTpo7-EqIuEQH117DaQw2NQg9x58YGgeC9ZpmPBbpqYNzCyLabJGdTrCEsW8dO7RDJVv3EciucjE_DJ_r0FdaQXZjziNJy3ArXTbOxlANdQBhdCJg5OI9dKkWycL24nrsiqSjMKfXZ0LgAe_uiIDZI5G7B0-GlJUyN_z5Czu5RZ90);
+    color: #e7e2d6;
+}
+
+.bg-wood-reservations {
+    background-color: #15130d;
+    background-image: linear-gradient(rgba(21, 19, 13, 0.85), rgba(21, 19, 13, 0.85)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuBtLwCBO-UA5_1zNi1EQH6IzE1kF_CftW8W_JRVI0eDccyANHkLHlivGiFD28mNStGWlaa9e6c6c4rX0YiUfjDLUVF7l2D9ZwTtUAlcx864cxaD2HkfGmTxm-hZOIFQDYGvBPv9s4f7vEuA3ekCdRyDLmMUZ4VN0GiqNFEprMU242vcYEGYQoijnua30wYWfM9wsvlcm-qDkU1fxSXM9ddSiwB__JBeValecsOTB9gyNcdzT4yY7fnxdubt1pWAb2Gygzvz5YC4lsc);
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-wood-reviews {
+    background-image: linear-gradient(to bottom, rgba(21, 19, 13, 0.9), rgba(21, 19, 13, 0.95)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuDg5fMoOY0GeMsC0IvdtMBHmhfBT7njFzXKissaTYBxybPSkU4j9WpzYn1w-8siFnHIUs2HkNKeO07luv6F499dJk1qlaEJ9tEe2_FXjQOqIn9-Idsa11-YwoCvjeaUzT2CEGuxnGf9uNqNVenAU9xdyYhLsMpdj9jRV0kzLoqVyvs-AwtDVvuEe1sVojiRYOllXrEQC8xm8qBYFmKXOP6oNAegEc9SRmc7JFCEeTDv0SSFn6i3smFzLhFmtciWAMSE2kWbPhEXFKU);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-wood-about {
+    background-color: #15130d;
+    background-image: linear-gradient(rgba(21, 19, 13, 0.85), rgba(21, 19, 13, 0.85)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuDV6Xc__w8K6S4eX0OiC-OnGGnJsnpvdM_1En7Vg4CG9bPFriIB1P-0ZcgvePm4YamX8sYh5mtYxaWxtuYQ8pRcGC_TrVVkJnwbgY-SIZMTztW0yqDawrBy0kfWLH0VSDEWd6MsdnaP7pIVGZqhALpCJDY58NBXJ9otnJlNUsb7qeiA-SDT43elvANm6UcW0YWb1TAKfXzc3Z2O-4vFMpOm6yoG-aul78z1dulMjMJ0YbnSZGBDvKDQEUnBB-WNDlBzOJJ9icILbuM);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* =========================================
+   Animations
+   ========================================= */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+
+/* Interactive Utilities */
+.smooth-hover {
+    transition: all 0.3s ease-in-out;
+}
